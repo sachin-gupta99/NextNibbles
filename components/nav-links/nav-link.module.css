@@ -1,0 +1,29 @@
+.link {
+  text-decoration: none;
+  margin-left: 1.5rem;
+  padding: 0.5rem;
+  color: #f1f1f1;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 4px;
+  background: #f9572a;
+  transition: width 0.3s;
+  background: linear-gradient(90deg, #f9572a, #ff9b05);
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+.active::after {
+  width: 100%;
+}
