@@ -3,7 +3,7 @@ import './globals.css';
 import MainHeaderBackground from '@/components/main-header/main-header-background';
 
 export const metadata = {
-  title: 'NextLevel Food',
+  title: 'Next Nibbles',
   description: 'Delicious meals, shared by a food-loving community.',
 };
 

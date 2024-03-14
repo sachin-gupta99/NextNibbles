@@ -3,8 +3,11 @@ import Link from "next/link";
 
 import classes from "./page.module.css";
 import MealGrid from "@/components/meals/meal-grid";
+import { getAllMeals } from "@/lib/meals";
 
-const MealsPage = () => {
+const MealsPage = async () => {
+  const meals = await getAllMeals();
+
   return (
     <>
       <header className={classes["header"]}>
@@ -18,7 +21,7 @@ const MealsPage = () => {
         </p>
       </header>
       <main className={classes["main"]}>
-        <MealGrid meals={[]} />
+        <MealGrid meals={meals} />
       </main>
     </>
   );
