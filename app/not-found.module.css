@@ -1,0 +1,8 @@
+.home-link {
+  border: 0.1rem solid #f9572a;
+  border-radius: 0.4rem;
+  padding: 0.4rem;
+  color: #f9572a;
+  font-size: 20px;
+  text-decoration: none;
+}

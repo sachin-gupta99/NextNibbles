@@ -2,10 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
     color: white;
     font-weight: bold;
     animation: loading 1s linear infinite;
