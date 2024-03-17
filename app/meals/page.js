@@ -6,13 +6,18 @@ import MealGrid from "@/components/meals/meal-grid";
 import { getAllMeals } from "@/lib/meals";
 import { loadingMealsPage } from "./loading-out";
 
+export const metadata = {
+  title: "Delicious Meals",
+  description:
+    "Choose your favorite meal from our broad selection of available meals and enjoy a delicious lunch or dinner at home.",
+};
+
 const Meals = async () => {
-  const meals = await getAllMeals();  
+  const meals = await getAllMeals();
   return <MealGrid meals={meals} />;
 };
 
 const MealsPage = () => {
-
   return (
     <>
       <header className={classes["header"]}>
